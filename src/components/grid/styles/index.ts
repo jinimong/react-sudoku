@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
@@ -7,6 +7,27 @@ export const Container = styled.div`
 `
 
 export const Row = styled.div`
-  display: flex;
-  flex-flow: row;
+  ${({ theme }) => css`
+    display: flex;
+    flex-flow: row;
+
+    &:nth-child(3n-2) {
+      div {
+        border-top: solid 4px ${theme.colors.black};
+      }
+    }
+    &:last-child {
+      div {
+        border-bottom: solid 4px ${theme.colors.black};
+      }
+    }
+    div {
+      &:nth-child(3n-2) {
+        border-left: solid 4px ${theme.colors.black};
+      }
+      &:last-child {
+        border-right: solid 4px ${theme.colors.black};
+      }
+    }
+  `}
 `
