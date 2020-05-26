@@ -1,4 +1,6 @@
-import { GRID } from 'typings'
+import { GRID, NUMBERS } from 'typings'
+import { shuffle } from 'utils'
+
 const gridExample: GRID = [
   [0, 0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0, 0],
