@@ -1,4 +1,4 @@
-import { GRID } from '../../typings'
+import { GRID } from 'typings'
 const gridExample: GRID = [
   [0, 0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0, 0],
