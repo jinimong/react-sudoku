@@ -1,0 +1,15 @@
+import { NUMBERS, SQUARE } from 'typings'
+
+interface IInput {
+  square: SQUARE
+  value: NUMBERS
+}
+
+const isInSquare: ({ square, value }: IInput) => boolean = ({
+  square,
+  value,
+}) => {
+  return [...square[0], ...square[1], ...square[2]].includes(value)
+}
+
+export default isInSquare
